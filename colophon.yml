@@ -1,0 +1,8 @@
+version: 2.0
+
+id: action
+
+about:
+  title: "GitReleaser Action"
+  description: Github Action for creating Github Releases
+  repository: GitReleaser/action
