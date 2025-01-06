@@ -1,11 +1,5 @@
 # GitReleaser Action
 
-<a aria-label="NPM version" href="https://www.npmjs.com/package/GitReleaser">
-  <img alt="" src="https://img.shields.io/npm/v/GitReleaser.svg?style=flat-square&labelColor=000000">
-</a>
-
-<br />
-
 - [🤸 Usage](#-usage)
   - [🚥 Limit releases to pushes to tags](#-limit-releases-to-pushes-to-tags)
   - [⬆️ Uploading release assets](#️-uploading-release-assets)
