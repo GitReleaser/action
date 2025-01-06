@@ -4,12 +4,6 @@
   <img alt="" src="https://img.shields.io/npm/v/GitReleaser.svg?style=flat-square&labelColor=000000">
 </a>
 
-<div align="center">
-  <a href="https://github.com/GitReleaser/action/actions">
-		<img src="https://github.com/GitReleaser/action/workflows/Main/badge.svg"/>
-	</a>
-</div>
-
 <br />
 
 - [🤸 Usage](#-usage)
