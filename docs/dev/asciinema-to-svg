@@ -1,2 +1,0 @@
-asciinema rec release-git.cast
-cat release-git.cast | svg-term --out release-git.svg --padding 10
