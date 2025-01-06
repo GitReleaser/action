@@ -224,12 +224,3 @@ a personal access token for this action, as the [default `secrets.GITHUB_TOKEN` 
   [GitHub token permissions]: https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token
   [default `secrets.GITHUB_TOKEN` does not trigger another workflow]: https://github.com/actions/create-release/issues/71
 
-----
-> Author: [KhulnaSoft DevOps](https://www.khulnasoft.com/) &bull;
-> Twitter: [@khulnasoft](https://twitter.com/khulnasoft)
-
-[license-url]: LICENSE
-[license-img]: https://badgen.net/github/license/GitReleaser/action
-
-[release-url]: https://github.com/GitReleaser/action/releases
-[release-img]: https://badgen.net/github/release/GitReleaser/action
