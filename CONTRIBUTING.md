@@ -15,3 +15,38 @@ Source code can be found under the `src` directory. Running `npm run build` will
 ## formatting
 
 A minimal attempt at keeping a consistent code style is can be applied by running `npm run fmt`.
+
+## contributing to alignAssetName function
+
+The `alignAssetName` function is used to replace spaces with dots in asset names. This is useful when uploading assets to GitHub releases, as GitHub may rename asset filenames that have special characters, non-alphanumeric characters, and leading or trailing periods.
+
+### Example
+
+```javascript
+const { alignAssetName } = require('./util');
+
+const assetName = "John Doe.bla";
+const alignedName = alignAssetName(assetName);
+
+console.log(alignedName); // Output: John.Doe.bla
+```
+
+### Testing
+
+To test the `alignAssetName` function, add your test cases in the `__tests__/util.test.ts` file. Here is an example of how to test the function:
+
+```javascript
+describe("alignAssetName", () => {
+  it("replaces all spaces with dots", () => {
+    expect(alignAssetName("John Doe.bla")).toBe("John.Doe.bla");
+  });
+
+  it("handles names with multiple spaces", () => {
+    expect(alignAssetName("John William Doe.bla")).toBe("John.William.Doe.bla");
+  });
+
+  it("returns the same string if there are no spaces", () => {
+    expect(alignAssetName("JohnDoe")).toBe("JohnDoe");
+  });
+});
+```
