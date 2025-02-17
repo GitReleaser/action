@@ -224,3 +224,18 @@ permissions:
 ```
 
 [GitHub token permissions](https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token) can be set for an individual job, workflow, or for Actions as a whole.
+
+### alignAssetName Function
+
+The `alignAssetName` function is used to replace spaces with dots in asset names. This is useful when uploading assets to GitHub releases, as GitHub may rename asset filenames that have special characters, non-alphanumeric characters, and leading or trailing periods.
+
+#### Example
+
+```javascript
+const { alignAssetName } = require('./util');
+
+const assetName = "John Doe.bla";
+const alignedName = alignAssetName(assetName);
+
+console.log(alignedName); // Output: John.Doe.bla
+```
